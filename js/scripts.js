@@ -5,6 +5,12 @@ $(document).ready(function() {
     var side2 = parseInt($("#side2").val());
     var side3 = parseInt($("#side3").val());
 
+    $(".not-triangle").hide();
+    $(".equilateral").hide();
+    $(".isosceles").hide();
+    $(".scalene").hide();
+
+
     if ((side1 + side2 <= side3) || (side1 + side3 <= side2) || (side2 + side3 <= side1)) {
       $(".not-triangle").show();
     } else {
